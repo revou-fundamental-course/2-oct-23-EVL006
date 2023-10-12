@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>Kalkulator Suhu</h1>
+    <div class="calculator">
+        <div class="input-container">
+            <input type="text" id="input" placeholder="Masukkan suhu" />
+            <select id="fromUnit">
+                <option value="celcius">Celcius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <!-- Tambahkan unit suhu lainnya sesuai kebutuhan -->
+            </select>
+        </div>
+        <div class="conversion-container">
+            <span>ke</span>
+            <select id="toUnit">
+                <option value="celcius">Celcius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <!-- Tambahkan unit suhu lainnya sesuai kebutuhan -->
+            </select>
+        </div>
+        <button onclick="convertTemperature()">Konversi</button>
+        <p id="result"></p>
+    </div>
+    <div class="explanation">
+        <h2><b>Cara Menghitung:</b></h2>
+        <p>Masukkan suhu yang ingin Anda konversi ke kotak input.</p>
+        <p>Pilih unit suhu awal dan unit suhu yang diinginkan untuk konversi.</p>
+        <p>Klik tombol "Konversi" untuk melihat hasilnya.</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
